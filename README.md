@@ -3,7 +3,7 @@ This project is a **lightweight System Monitoring script** written in Bash. It p
 
 The script is designed with modular functions and professional Bash practices, making it clean, maintainable, and easy to extend. It’s a good fit for **DevOps engineers, sysadmins, or anyone who wants a simple alternative to heavy monitoring agents**.  
 
-** Features  **
+**Features**
 - **System Monitoring** – Tracks CPU, memory, disk usage, and uptime in real-time.  
 - **Modular Functions** – Each check (CPU, memory, etc.) is implemented as its own function for clarity and reusability.  
 - **Customizable Thresholds** – Easily configure alert levels, log file options, and email addresses through top-level variables.  
@@ -11,7 +11,7 @@ The script is designed with modular functions and professional Bash practices, m
 - **Automated Alerts** – Sends email notifications when CPU/disk usage goes beyond defined thresholds.  
 - **Advanced Bash Practices** – Includes quoting, function-local variables, safe arithmetic, and robust error handling for portability.  
 
-**Usage  **
+**Usage**
 1. Open the script and configure the settings at the top for your environment:  
    - `CPU_THRESHOLD` (percent)  
    - `DISK_THRESHOLD` (percent)  
@@ -26,7 +26,7 @@ The script is designed with modular functions and professional Bash practices, m
    ./syshealth.sh
    ```
 
-** Techniques & Best Practices Used  **
+**Techniques & Best Practices Used**
 - **Function Modularity** – Clear separation of monitoring and utility logic.  
 - **Configurable Parameters** – Change behavior without editing the script’s core logic.  
 - **Log Rotation** – Prevents the log file from growing endlessly during continuous use.  
