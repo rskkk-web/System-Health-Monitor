@@ -84,7 +84,7 @@ fi
 
 # ---ALERTS---
 if [[ "$ENABLE_ALERTS" == true ]] && (( $(echo "$cpu > $CPU_THRESHOLD" | bc -l) )); then
-    send_alert "CPU" "CPU usage is high: $cpu%"
+    send_alert "CPU" "High CPU Usage: $cpu%"
 fi
 
 if [[ "$ENABLE_ALERTS" == true ]] && (( $(echo "$disk > $DISK_THRESHOLD" | bc -l) )); then
